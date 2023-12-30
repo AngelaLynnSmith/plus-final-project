@@ -1,8 +1,7 @@
 body {
-background: linear-gradient(109.5deg, 
-rgb(13, 11, 136) 
-9.4%, 
-rgb(86, 255, 248) 78.4%);
+
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/725/original/rocks.jpeg?1703969693");
+
 font-family: "Roboto", sans-serif;
 }
 

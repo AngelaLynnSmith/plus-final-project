@@ -92,7 +92,7 @@ function displayForecast(response) {
 	}
 });
 
-	
+
 	forecastElement.innerHTML = forecastHtml;
 }
 
