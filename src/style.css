@@ -1,12 +1,9 @@
 body {
-  background: linear-gradient(
-    106.8deg,
-    rgb(117, 255, 220) 6%,
-    rgb(163, 216, 255) 47.6%,
-    rgb(248, 215, 251) 87.8%
-  );
-
-  font-family: "Roboto", sans-serif;
+background: linear-gradient(109.5deg, 
+rgb(13, 11, 136) 
+9.4%, 
+rgb(86, 255, 248) 78.4%);
+font-family: "Roboto", sans-serif;
 }
 
 a {
