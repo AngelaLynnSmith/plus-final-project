@@ -1,7 +1,7 @@
 body {
 
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/725/original/rocks.jpeg?1703969693");
-
+background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/725/original/rocks.jpeg?1703969693");
+background-size: cover;
 font-family: "Roboto", sans-serif;
 }
 
