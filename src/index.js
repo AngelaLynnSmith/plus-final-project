@@ -68,20 +68,19 @@ function getForecast(coordinates) {
 	console.log(apiUrl);
 	axios(apiUrl).then(displayForecast);
 }
-
 function displayForecast(response) {
 	let forecast = response.data.daily;
 
 	let forecastElement = document.querySelector("#forecast");
 
-	let forecastHTML = `<div class="row">`;
+	let forecastHTML = ``;
 	forecast.forEach(function (forecastDay, index) {
 		console.log(forecastDay);
 		if (index < 5) {
 			forecastHTML =
 				forecastHTML +
 				`
-      <div class="col-2">
+      <div class="forecast-day">
         <div class="weather-forecast-date">${formatDay(forecastDay.time)}</div>
         <img
           src="${forecastDay.condition.icon_url}"
@@ -101,11 +100,7 @@ function displayForecast(response) {
 		}
 	});
 
-	forecastHTML = forecastHTML + `</div>`;
 	forecastElement.innerHTML = forecastHTML;
 }
-
-let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Madrid");
