@@ -64,7 +64,7 @@ function formatDay(timestamp) {
 function getForecast(coordinates) {
 	console.log(coordinates);
 	let apiKey = "cc8ad09bc07492ceeb391dfbot84812f";
-	let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}`;
+	let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=imperial`;
 	console.log(apiUrl);
 	axios(apiUrl).then(displayForecast);
 }
