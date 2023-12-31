@@ -103,4 +103,8 @@ function displayForecast(response) {
 	forecastElement.innerHTML = forecastHTML;
 }
 
-searchCity("Madrid");
+
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+searchCity("Esparza");
